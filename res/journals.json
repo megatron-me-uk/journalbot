@@ -1,14 +1,33 @@
+[
+{
+	"journal": "Journal of Neurophysiology",
+	"journ": "J.Neurophysiol",
+	"base": "http://jn.physiology.org",
+	"uri": "/content/current",
+	"container": {"li": {"class": "gca-results-abs"}},
+	"section": {"span": {"class": "gca-section"}},
+	"title": "h2",
+	"text": {"div": {"class": "section abstract"}, "tag":"p"},
+	"url": {
+		"a": {"rel": "full-text"},
+		"property": "href"}
+	"keywords": {"ul": {"class": "kwd-group"}, "tags": "a"}
+}
+,
 {
         "journal": "The Journal of Neuroscience",
-		"journ": "J.Neuro",
-		"container": {"li": {"class": "gca-results-abs"}},
-		"section": {"span": {"class": "gca-section"}},
-		"title": "h2",
-		"text": {"div": {"class":"section abstract"},"tag":"p"},
-		"received": {"li": {"class": "received"}},
-		"rev-recd": {"li": {"class": "rev-recd"}},
-		"accepted": {"li": {"class": "accepted"}},
-		"url": {
-			"a": {"rel": "full-text"},
-			"property": "href"}
+	"journ": "J.Neuro",
+	"base": "http://www.jneurosci.org"
+	"uri": "/content/current"
+	"container": {"li": {"class": "gca-results-abs"}},
+	"section": {"span": {"class": "gca-section"}},
+	"title": "h2",
+	"text": {"div": {"class":"section abstract"},"tag":"p"},
+	"received": {"li": {"class": "received"}},
+	"rev-recd": {"li": {"class": "rev-recd"}},
+	"accepted": {"li": {"class": "accepted"}},
+	"url": {
+		"a": {"rel": "full-text"},
+		"property": "href"}
 }
+]

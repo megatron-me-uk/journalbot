@@ -40,6 +40,10 @@ def getAbstracts(url,conf):
 				elif(len(value)==2):
 					if(value.keys()[1]=='tag'):
 						a[i][key]=abstract.find(value.keys()[0],{value.values()[0].keys()[0]:value.values()[0].values()[0]}).find(value.values()[1]).text
+					elif(value.keys()[1]=='tags'):
+						a[i][key]=abstract.find(value.keys()[0],{value.values()[0].keys()[0]:value.values()[0].values()[0]}).findAll(value.values()[1])
+						for part in a[i][key]:
+							part=part.text
 					elif(value.keys()[1]=='property'):
 						a[i][key]=abstract.find(value.keys()[0],{value.values()[0].keys()[0]:value.values()[0].values()[0]})[value.values()[1]]
 		
@@ -64,11 +68,11 @@ def writeFiles(a,fName="output"):
 			myfile2.write('\n------\n')
 	
 if __name__ == '__main__':
-	base="http://www.jneurosci.org"
-	uri="/content/current"
 	f=open('../res/journals.json')
 	conf=simplejson.load(f)
+	base=conf[0]['base']
+	uri=conf[0]['uri']
 	query=getJourn(base,uri)
-	a=getAbstracts(query,conf)
+	a=getAbstracts(query,conf[0])
 	writeFiles(a)
 	
