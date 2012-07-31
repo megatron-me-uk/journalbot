@@ -10,15 +10,15 @@
 	"text": {"div": {"class": "section abstract"}, "tag":"p"},
 	"url": {
 		"a": {"rel": "full-text"},
-		"property": "href"}
+		"property": "href"},
 	"keywords": {"ul": {"class": "kwd-group"}, "tags": "a"}
 }
 ,
 {
         "journal": "The Journal of Neuroscience",
 	"journ": "J.Neuro",
-	"base": "http://www.jneurosci.org"
-	"uri": "/content/current"
+	"base": "http://www.jneurosci.org",
+	"uri": "/content/current",
 	"container": {"li": {"class": "gca-results-abs"}},
 	"section": {"span": {"class": "gca-section"}},
 	"title": "h2",

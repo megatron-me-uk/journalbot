@@ -30,6 +30,7 @@ def getAbstracts(url,conf):
 		a[i]['journal']=confIt.pop('journal')
 		a[i]['journ']=confIt.pop('journ')
 		a[i]['url']=url
+		confIt.pop
 		a[i]['conf']=confIt
 		for key,value in confIt.items():
 			if(type(value)==type('')):
@@ -70,8 +71,8 @@ def writeFiles(a,fName="output"):
 if __name__ == '__main__':
 	f=open('../res/journals.json')
 	conf=simplejson.load(f)
-	base=conf[0]['base']
-	uri=conf[0]['uri']
+	base=conf[0].pop('base')
+	uri=conf[0].pop('uri')
 	query=getJourn(base,uri)
 	a=getAbstracts(query,conf[0])
 	writeFiles(a)
