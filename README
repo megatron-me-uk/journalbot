@@ -1,0 +1,3 @@
+A simple python(2) bot to collect journal abstracts.
+
+Depends upon simplejson and BeautifulSoup
